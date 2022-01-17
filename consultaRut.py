@@ -37,7 +37,9 @@ print(" ")
 while True:
   rut = input(Fore.GREEN+"Inserte RUT sin puntos y con guión:"+Style.RESET_ALL+" "+Fore.LIGHTRED_EX)
   if not re.match("^[0-9]+-[0-9kK]{1}$", rut):
-        print ("RUT NO VÁLIDO, VUELVA A INGRESAR")
+        print ("RUT NO VÁLIDO")
+  if len(rut) < 9:
+        print("LARGO DE RUT INCORRECTO")
   else:
         print(" ")
         print(Fore.YELLOW+"########################################################################################################################")
