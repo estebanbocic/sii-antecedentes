@@ -18,3 +18,7 @@ python3 consultaRut.py
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Author
+
+Esteban Bocic B.
