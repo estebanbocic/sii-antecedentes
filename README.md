@@ -21,4 +21,4 @@ python3 consultaRut.py
 
 ## Author
 
-Esteban Bocic B.
+Esteban Bocic B. @ebocic
