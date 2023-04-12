@@ -3,7 +3,8 @@ from colorama import Fore, Back, Style
 import requests
 import json
 import base64
-import re 
+import re
+from csv import writer
 
 #### RESOLVE CAPTCHA ####
 
@@ -73,6 +74,9 @@ while True:
           monedaExtranjera = soup.select("#contenedor > span:nth-child(16)")[0].string.strip()
           empresaMenorTamano = soup.select("#contenedor > span:nth-child(18)")[0].contents[2]
 
+        #### END WEBSCRAPPING ####
+
+        #### PRINTING ####
         print(" ")
         print("FECHA DE REALIZACIÓN DE LA CONSULTA                                    --> "+Style.BRIGHT+Fore.BLUE+fechaConsulta.replace("Fecha de realización de la consulta: ","")+Style.RESET_ALL)
         print("NOMBRE                                                                 --> "+Style.BRIGHT+Fore.GREEN+name+Style.RESET_ALL)
@@ -87,7 +91,5 @@ while True:
         print("############################################## PROCESO TERMINADO ########################################################")
         print("#########################################################################################################################"+Style.RESET_ALL)
         print(" ")
-
-
-        #### END WEBSCRAPPING ####
+        #### END PRINTING ####     
         break
